@@ -10,5 +10,5 @@
 
 ## csv file in after run
 
-src/test/output.csv
+src/output.csv
 
