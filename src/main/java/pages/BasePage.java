@@ -12,8 +12,6 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
         this.driver = driver ;
-        File file= new File("src/output.csv");
-        file.delete();
     }
 
     public WebElement find(By locator){
