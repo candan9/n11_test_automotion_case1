@@ -57,7 +57,7 @@ public class TestGetCampaignsLinksToExport extends BaseTest {
     @Test
     @Order(2)
     public void get_campaigns_links_to_csv() throws IOException {
-        String csv = "src/output.csv";
+        String csv = "./target/output.csv";
         CSVWriter writer = new CSVWriter(new FileWriter(csv));
         String [] country = new String[0];
 

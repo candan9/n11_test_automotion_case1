@@ -8,7 +8,7 @@
 
 - "mvn clean test" 
 
-## csv file in after run
+## links included in csv file  will be generated after run
 
-src/test/output.csv
+/target/output.csv
 

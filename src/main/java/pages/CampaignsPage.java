@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -22,7 +23,8 @@ public class CampaignsPage extends BasePage {
     }
 
     public WebElement selectCategory(String categoryName){
-            return find(By.xpath("//li[@data-cat='"+categoryName+"']"));
+        WebDriverWait wait = new WebDriverWait(driver,3);
+        return find(By.xpath("//li[@data-cat='"+categoryName+"']"));
     }
     public List<WebElement> selectCampaigns(String campaignName){
         return findAll(By.xpath("//section[@data-category='"+campaignName+"']/ul/li/a"));

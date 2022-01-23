@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.File;
 import java.util.List;
 
 public class BasePage {
@@ -11,6 +12,8 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
         this.driver = driver ;
+        File file= new File("src/output.csv");
+        file.delete();
     }
 
     public WebElement find(By locator){
