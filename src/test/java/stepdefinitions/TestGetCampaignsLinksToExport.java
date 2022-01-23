@@ -5,14 +5,12 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 import pages.CampaignsPage;
-import stepdefinitions.BaseTest;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class getCampaignsLinksToExport extends BaseTest {
+public class TestGetCampaignsLinksToExport extends BaseTest {
     CampaignsPage campaignsPage;
     List<WebElement> campaignLinks;
     List<WebElement> categoryAttributes;
