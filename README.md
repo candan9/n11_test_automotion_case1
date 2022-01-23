@@ -10,5 +10,5 @@
 
 ## links included in csv file  will be generated after run
 
-/target/output.csv
+- /target/output.csv
 
